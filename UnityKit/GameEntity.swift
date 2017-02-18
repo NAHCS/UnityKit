@@ -9,12 +9,12 @@
 import Foundation
 import GameplayKit
 
-public class GameEntity : GKEntity {
+open class GameEntity : GKEntity {
     
     public var node = SKNode()
     public var gameEntity = self
     
-    override public func addComponent(_ component: GKComponent) {
+    override open func addComponent(_ component: GKComponent) {
         if let c = component as? GameComponent {
             c.gameEntity = self
         }

@@ -9,7 +9,7 @@
 import Foundation
 import GameplayKit
 
-public class GameComponent : GKComponent {
+open class GameComponent : GKComponent {
     
     public var gameEntity: GameEntity!
 }

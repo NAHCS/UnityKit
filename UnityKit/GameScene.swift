@@ -9,17 +9,17 @@
 import SpriteKit
 import GameplayKit
 
-public class GameScene: SKScene {
+open class GameScene: SKScene {
 	
 	// MARK: - Scene Logic
 	
-	override public func didMove(to view: SKView) {
+	override open func didMove(to view: SKView) {
 		
         self.physicsWorld.gravity = CGVector.zero
         self.physicsWorld.contactDelegate = self
 		backgroundColor = SKColor.black
 	}
-	override public func update(_ currentTime: TimeInterval) {
+	override open func update(_ currentTime: TimeInterval) {
 		
         super.update(currentTime)
         
@@ -52,16 +52,16 @@ public class GameScene: SKScene {
 		currentTouch = nil
 	}
 	
-	override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchDown(atPoint: t.location(in: self)) }
 	}
-	override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
 	}
-	override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchUp(atPoint: t.location(in: self)) }
 	}
-	override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchUp(atPoint: t.location(in: self)) }
 	}
     
@@ -70,12 +70,12 @@ public class GameScene: SKScene {
     
     var entities = Set<GameEntity>()
     
-    func addEntity(_ entity: GameEntity) {
+    public func addEntity(_ entity: GameEntity) {
         addChild(entity.node)
         entities.insert(entity)
     }
     
-    func removeEntity(_ entity: GameEntity) {
+    public func removeEntity(_ entity: GameEntity) {
         entity.node.removeFromParent()
         entities.remove(entity)
     }

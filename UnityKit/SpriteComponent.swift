@@ -9,7 +9,7 @@
 import Foundation
 import GameplayKit
 
-public class SpriteComponent : NodeComponent {
+open class SpriteComponent : NodeComponent {
     
     init(texture: SKTexture) {
         super.init()
