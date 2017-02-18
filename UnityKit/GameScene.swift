@@ -34,8 +34,8 @@ open class GameScene: SKScene {
 	
 	// MARK: - Touches
 	
-	var touchOrigin: CGPoint?
-	var currentTouch: CGPoint?
+	public var touchOrigin: CGPoint?
+	public var currentTouch: CGPoint?
 	
 	func touchDown(atPoint pos : CGPoint) {
 
