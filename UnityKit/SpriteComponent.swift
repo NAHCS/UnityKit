@@ -9,7 +9,7 @@
 import Foundation
 import GameplayKit
 
-class SpriteComponent : NodeComponent {
+public class SpriteComponent : NodeComponent {
     
     init(texture: SKTexture) {
         super.init()
@@ -21,7 +21,7 @@ class SpriteComponent : NodeComponent {
         self.init(texture: texture)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

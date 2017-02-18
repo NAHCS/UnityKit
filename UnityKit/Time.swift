@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Time {
+public class Time {
     
     private static var globalStartTime: TimeInterval = NSDate().timeIntervalSinceReferenceDate
     private static var lastFrameTime: TimeInterval = 0

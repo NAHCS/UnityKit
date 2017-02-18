@@ -9,7 +9,7 @@
 import Foundation
 import GameplayKit
 
-class NodeComponent : GameComponent {
+public class NodeComponent : GameComponent {
     
-    var node: SKNode?
+    public var node: SKNode?
 }

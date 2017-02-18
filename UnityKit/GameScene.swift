@@ -9,17 +9,17 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+public class GameScene: SKScene {
 	
 	// MARK: - Scene Logic
 	
-	override func didMove(to view: SKView) {
+	override public func didMove(to view: SKView) {
 		
         self.physicsWorld.gravity = CGVector.zero
         self.physicsWorld.contactDelegate = self
 		backgroundColor = SKColor.black
 	}
-	override func update(_ currentTime: TimeInterval) {
+	override public func update(_ currentTime: TimeInterval) {
 		
         super.update(currentTime)
         
@@ -52,16 +52,16 @@ class GameScene: SKScene {
 		currentTouch = nil
 	}
 	
-	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchDown(atPoint: t.location(in: self)) }
 	}
-	override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
 	}
-	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchUp(atPoint: t.location(in: self)) }
 	}
-	override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+	override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 		for t in touches { self.touchUp(atPoint: t.location(in: self)) }
 	}
     
@@ -83,11 +83,11 @@ class GameScene: SKScene {
 
 extension GameScene : SKPhysicsContactDelegate {
     
-	func didBegin(_ contact: SKPhysicsContact) {
+	public func didBegin(_ contact: SKPhysicsContact) {
         
         PhysicsEvents.contactBegan(contact)
 	}
-    func didEnd(_ contact: SKPhysicsContact) {
+    public func didEnd(_ contact: SKPhysicsContact) {
         
         PhysicsEvents.contactEnded(contact)
     }

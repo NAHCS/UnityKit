@@ -9,7 +9,7 @@
 import Foundation
 import GameplayKit
 
-class PhysicsComponent : GameComponent, AwakeableComponent {
+public class PhysicsComponent : GameComponent, AwakeableComponent {
     
     let physicsBody: SKPhysicsBody
     let physicsCategory: UInt32
@@ -27,21 +27,21 @@ class PhysicsComponent : GameComponent, AwakeableComponent {
         PhysicsEvents.registerPhysicsBody(self.physicsBody, with: self)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("GameComponent doesn't support NSCoder")
     }
     
-    func madeContact(with body: SKPhysicsBody) {
+    public func madeContact(with body: SKPhysicsBody) {
         
         print("\(gameEntity.node.name) made contact with \(body.node?.name ?? "unnamed body")")
     }
     
-    func endedContact(with body: SKPhysicsBody) {
+    public func endedContact(with body: SKPhysicsBody) {
         
         print("\(gameEntity.node.name) ended contact with \(body.node?.name ?? "unnamed body")")
     }
     
-    func awake() {
+    public func awake() {
         gameEntity.node.physicsBody = physicsBody
         gameEntity.node.physicsBody?.categoryBitMask = physicsCategory
         gameEntity.node.physicsBody?.contactTestBitMask = contactMask

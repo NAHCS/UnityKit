@@ -9,11 +9,11 @@
 import Foundation
 import GameplayKit
 
-class GameComponent : GKComponent {
+public class GameComponent : GKComponent {
     
-    var gameEntity: GameEntity!
+    public var gameEntity: GameEntity!
 }
 
-protocol AwakeableComponent {
+public protocol AwakeableComponent {
     func awake()
 }
