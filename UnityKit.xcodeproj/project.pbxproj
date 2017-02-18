@@ -10,6 +10,14 @@
 		877BDC2A1E58ECEC009A052B /* UnityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC201E58ECEC009A052B /* UnityKit.framework */; };
 		877BDC2F1E58ECEC009A052B /* UnityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC2E1E58ECEC009A052B /* UnityKitTests.swift */; };
 		877BDC311E58ECEC009A052B /* UnityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 877BDC231E58ECEC009A052B /* UnityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		877BDC441E590329009A052B /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3B1E590329009A052B /* GameComponent.swift */; };
+		877BDC451E590329009A052B /* GameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3C1E590329009A052B /* GameEntity.swift */; };
+		877BDC461E590329009A052B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3D1E590329009A052B /* GameScene.swift */; };
+		877BDC471E590329009A052B /* NodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3E1E590329009A052B /* NodeComponent.swift */; };
+		877BDC481E590329009A052B /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3F1E590329009A052B /* PhysicsComponent.swift */; };
+		877BDC491E590329009A052B /* PhysicsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC401E590329009A052B /* PhysicsEvents.swift */; };
+		877BDC4A1E590329009A052B /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC411E590329009A052B /* SpriteComponent.swift */; };
+		877BDC4B1E590329009A052B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC421E590329009A052B /* Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		877BDC291E58ECEC009A052B /* UnityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		877BDC2E1E58ECEC009A052B /* UnityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityKitTests.swift; sourceTree = "<group>"; };
 		877BDC301E58ECEC009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877BDC3B1E590329009A052B /* GameComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
+		877BDC3C1E590329009A052B /* GameEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEntity.swift; sourceTree = "<group>"; };
+		877BDC3D1E590329009A052B /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		877BDC3E1E590329009A052B /* NodeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeComponent.swift; sourceTree = "<group>"; };
+		877BDC3F1E590329009A052B /* PhysicsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
+		877BDC401E590329009A052B /* PhysicsEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsEvents.swift; sourceTree = "<group>"; };
+		877BDC411E590329009A052B /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		877BDC421E590329009A052B /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +87,10 @@
 		877BDC221E58ECEC009A052B /* UnityKit */ = {
 			isa = PBXGroup;
 			children = (
-				877BDC231E58ECEC009A052B /* UnityKit.h */,
-				877BDC241E58ECEC009A052B /* Info.plist */,
+				877BDC4F1E590645009A052B /* SpriteKit Extensions */,
+				877BDC4E1E590621009A052B /* GameplayKit Extensions */,
+				877BDC501E590654009A052B /* Utilities */,
+				877BDC511E590680009A052B /* Framework */,
 			);
 			path = UnityKit;
 			sourceTree = "<group>";
@@ -84,6 +102,44 @@
 				877BDC301E58ECEC009A052B /* Info.plist */,
 			);
 			path = UnityKitTests;
+			sourceTree = "<group>";
+		};
+		877BDC4E1E590621009A052B /* GameplayKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC3B1E590329009A052B /* GameComponent.swift */,
+				877BDC3C1E590329009A052B /* GameEntity.swift */,
+				877BDC3E1E590329009A052B /* NodeComponent.swift */,
+				877BDC3F1E590329009A052B /* PhysicsComponent.swift */,
+				877BDC411E590329009A052B /* SpriteComponent.swift */,
+			);
+			name = "GameplayKit Extensions";
+			sourceTree = "<group>";
+		};
+		877BDC4F1E590645009A052B /* SpriteKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC3D1E590329009A052B /* GameScene.swift */,
+			);
+			name = "SpriteKit Extensions";
+			sourceTree = "<group>";
+		};
+		877BDC501E590654009A052B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC421E590329009A052B /* Time.swift */,
+				877BDC401E590329009A052B /* PhysicsEvents.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		877BDC511E590680009A052B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC231E58ECEC009A052B /* UnityKit.h */,
+				877BDC241E58ECEC009A052B /* Info.plist */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +205,7 @@
 					877BDC1F1E58ECEB009A052B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = C8L677C7HM;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					877BDC281E58ECEC009A052B = {
@@ -198,6 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877BDC471E590329009A052B /* NodeComponent.swift in Sources */,
+				877BDC481E590329009A052B /* PhysicsComponent.swift in Sources */,
+				877BDC4A1E590329009A052B /* SpriteComponent.swift in Sources */,
+				877BDC491E590329009A052B /* PhysicsEvents.swift in Sources */,
+				877BDC451E590329009A052B /* GameEntity.swift in Sources */,
+				877BDC4B1E590329009A052B /* Time.swift in Sources */,
+				877BDC461E590329009A052B /* GameScene.swift in Sources */,
+				877BDC441E590329009A052B /* GameComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +387,7 @@
 		877BDC351E58ECEC009A052B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
@@ -334,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.creationism.UnityKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +408,7 @@
 		877BDC361E58ECEC009A052B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
@@ -360,6 +428,7 @@
 		877BDC381E58ECEC009A052B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
 				INFOPLIST_FILE = UnityKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +441,7 @@
 		877BDC391E58ECEC009A052B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
 				INFOPLIST_FILE = UnityKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +470,7 @@
 				877BDC361E58ECEC009A052B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		877BDC371E58ECEC009A052B /* Build configuration list for PBXNativeTarget "UnityKitTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +479,7 @@
 				877BDC391E58ECEC009A052B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
