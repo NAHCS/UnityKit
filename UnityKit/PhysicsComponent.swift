@@ -16,7 +16,7 @@ public class PhysicsComponent : GameComponent, AwakeableComponent {
     let contactMask: UInt32
     let collisionMask: UInt32
     
-    init(withBody physicsBody: SKPhysicsBody, category physicsCategory: UInt32, contactCategories contactMask: UInt32, collisionCategories collisionMask: UInt32 ) {
+    public init(withBody physicsBody: SKPhysicsBody, category physicsCategory: UInt32, contactCategories contactMask: UInt32, collisionCategories collisionMask: UInt32 ) {
         self.physicsBody = physicsBody
         self.physicsCategory = physicsCategory
         self.contactMask = contactMask

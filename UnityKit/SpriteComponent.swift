@@ -11,12 +11,12 @@ import GameplayKit
 
 open class SpriteComponent : NodeComponent {
     
-    init(texture: SKTexture) {
+    public init(texture: SKTexture) {
         super.init()
         node = SKSpriteNode(texture: texture)
     }
     
-    convenience init(imageNamed imageName: String) {
+    convenience public init(imageNamed imageName: String) {
         let texture = SKTexture(imageNamed: imageName)
         self.init(texture: texture)
     }
