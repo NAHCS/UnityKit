@@ -3,14 +3,13 @@
 //  fiftythreehurts
 //
 //  Created by Jak Tiano on 1/29/17.
-//  Copyright © 2017 JakTiano. All rights reserved.
+//  Copyright © 2017 Creationism. All rights reserved.
 //
 
-import Foundation
 import GameplayKit
 
-open class GameComponent : GKComponent {
-    
+open class GameComponent: GKComponent {
+
     public var gameEntity: GameEntity!
 }
 

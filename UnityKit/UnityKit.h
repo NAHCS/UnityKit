@@ -3,7 +3,7 @@
 //  UnityKit
 //
 //  Created by Jak Tiano on 2/18/17.
-//  Copyright © 2017 Jak Tiano. All rights reserved.
+//  Copyright © 2017 Creationism. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

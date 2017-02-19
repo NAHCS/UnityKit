@@ -164,6 +164,7 @@
 				877BDC1C1E58ECEB009A052B /* Frameworks */,
 				877BDC1D1E58ECEB009A052B /* Headers */,
 				877BDC1E1E58ECEB009A052B /* Resources */,
+				877BDC5E1E5A2B19009A052B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -200,7 +201,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Jak Tiano";
+				ORGANIZATIONNAME = Creationism;
 				TargetAttributes = {
 					877BDC1F1E58ECEB009A052B = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -249,6 +250,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		877BDC5E1E5A2B19009A052B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		877BDC1B1E58ECEB009A052B /* Sources */ = {
