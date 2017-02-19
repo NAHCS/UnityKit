@@ -18,6 +18,10 @@
 		877BDC491E590329009A052B /* PhysicsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC401E590329009A052B /* PhysicsEvents.swift */; };
 		877BDC4A1E590329009A052B /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC411E590329009A052B /* SpriteComponent.swift */; };
 		877BDC4B1E590329009A052B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC421E590329009A052B /* Time.swift */; };
+		877BDC641E5A479D009A052B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; };
+		877BDC651E5A479D009A052B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; };
+		877BDC681E5A4835009A052B /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		877BDC691E5A4835009A052B /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,20 @@
 			remoteInfo = UnityKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		877BDC671E5A481D009A052B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				877BDC681E5A4835009A052B /* Nimble.framework in CopyFiles */,
+				877BDC691E5A4835009A052B /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		877BDC201E58ECEC009A052B /* UnityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +63,8 @@
 		877BDC401E590329009A052B /* PhysicsEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsEvents.swift; sourceTree = "<group>"; };
 		877BDC411E590329009A052B /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		877BDC421E590329009A052B /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		877BDC601E5A437B009A052B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		877BDC611E5A437B009A052B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877BDC641E5A479D009A052B /* Nimble.framework in Frameworks */,
+				877BDC651E5A479D009A052B /* Quick.framework in Frameworks */,
 				877BDC2A1E58ECEC009A052B /* UnityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +94,7 @@
 				877BDC221E58ECEC009A052B /* UnityKit */,
 				877BDC2D1E58ECEC009A052B /* UnityKitTests */,
 				877BDC211E58ECEC009A052B /* Products */,
+				877BDC5F1E5A437A009A052B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +165,15 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		877BDC5F1E5A437A009A052B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC601E5A437B009A052B /* Nimble.framework */,
+				877BDC611E5A437B009A052B /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -182,6 +214,7 @@
 				877BDC251E58ECEC009A052B /* Sources */,
 				877BDC261E58ECEC009A052B /* Frameworks */,
 				877BDC271E58ECEC009A052B /* Resources */,
+				877BDC671E5A481D009A052B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -411,6 +444,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UnityKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -432,6 +470,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UnityKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -447,6 +490,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UnityKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creationism.UnityKitTests;
@@ -460,6 +507,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UnityKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creationism.UnityKitTests;
