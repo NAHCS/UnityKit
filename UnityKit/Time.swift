@@ -12,15 +12,17 @@ public class Time {
     private static var lastFrameTime: TimeInterval = 0
 
     public static var timeSinceStart: TimeInterval {
+
         return NSDate().timeIntervalSinceReferenceDate - globalStartTime
     }
     public static var time: TimeInterval = 0 {
+
         willSet {
             lastFrameTime = time
         }
     }
     public static var deltaTime: TimeInterval {
+
         return time - lastFrameTime
     }
-
 }

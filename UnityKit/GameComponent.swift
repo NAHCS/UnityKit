@@ -14,10 +14,12 @@ open class GameComponent: GKComponent {
 }
 
 public protocol AwakeableComponent {
+
     func awake()
 }
 
 public protocol PhysicsEventComponent {
+
     func onCollisionEnter(body: SKPhysicsBody)
     func onCollisionExit(body: SKPhysicsBody)
 }

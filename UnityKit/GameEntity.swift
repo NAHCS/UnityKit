@@ -17,6 +17,7 @@ open class GameEntity: GKEntity {
     public var physicsComponents = [PhysicsEventComponent]()
 
     override open func addComponent(_ component: GKComponent) {
+
         if let c = component as? GameComponent {
             c.gameEntity = self
         }

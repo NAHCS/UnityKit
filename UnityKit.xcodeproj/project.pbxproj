@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		877BDC2A1E58ECEC009A052B /* UnityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC201E58ECEC009A052B /* UnityKit.framework */; };
-		877BDC2F1E58ECEC009A052B /* UnityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC2E1E58ECEC009A052B /* UnityKitTests.swift */; };
 		877BDC311E58ECEC009A052B /* UnityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 877BDC231E58ECEC009A052B /* UnityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		877BDC441E590329009A052B /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3B1E590329009A052B /* GameComponent.swift */; };
 		877BDC451E590329009A052B /* GameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3C1E590329009A052B /* GameEntity.swift */; };
@@ -18,31 +16,37 @@
 		877BDC491E590329009A052B /* PhysicsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC401E590329009A052B /* PhysicsEvents.swift */; };
 		877BDC4A1E590329009A052B /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC411E590329009A052B /* SpriteComponent.swift */; };
 		877BDC4B1E590329009A052B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC421E590329009A052B /* Time.swift */; };
-		877BDC641E5A479D009A052B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; };
-		877BDC651E5A479D009A052B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; };
-		877BDC681E5A4835009A052B /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		877BDC691E5A4835009A052B /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		877BDC711E5A53E2009A052B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC701E5A53E2009A052B /* AppDelegate.swift */; };
+		877BDC791E5A53E2009A052B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC781E5A53E2009A052B /* GameViewController.swift */; };
+		877BDC7C1E5A53E2009A052B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877BDC7A1E5A53E2009A052B /* Main.storyboard */; };
+		877BDC7E1E5A53E2009A052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877BDC7D1E5A53E2009A052B /* Assets.xcassets */; };
+		877BDC811E5A53E2009A052B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877BDC7F1E5A53E2009A052B /* LaunchScreen.storyboard */; };
+		877BDC8C1E5A53E2009A052B /* UnityKitExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC8B1E5A53E2009A052B /* UnityKitExampleTests.swift */; };
+		877BDCA21E5A54A4009A052B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; };
+		877BDCA31E5A54A4009A052B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; };
+		877BDCA51E5A54B7009A052B /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		877BDCA61E5A54B7009A052B /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		877BDC2B1E58ECEC009A052B /* PBXContainerItemProxy */ = {
+		877BDC881E5A53E2009A052B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 877BDC171E58ECEB009A052B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 877BDC1F1E58ECEB009A052B;
-			remoteInfo = UnityKit;
+			remoteGlobalIDString = 877BDC6D1E5A53E2009A052B;
+			remoteInfo = "UnityKit-Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		877BDC671E5A481D009A052B /* CopyFiles */ = {
+		877BDCA41E5A54AF009A052B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				877BDC681E5A4835009A052B /* Nimble.framework in CopyFiles */,
-				877BDC691E5A4835009A052B /* Quick.framework in CopyFiles */,
+				877BDCA51E5A54B7009A052B /* Nimble.framework in CopyFiles */,
+				877BDCA61E5A54B7009A052B /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +56,6 @@
 		877BDC201E58ECEC009A052B /* UnityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		877BDC231E58ECEC009A052B /* UnityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityKit.h; sourceTree = "<group>"; };
 		877BDC241E58ECEC009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		877BDC291E58ECEC009A052B /* UnityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		877BDC2E1E58ECEC009A052B /* UnityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityKitTests.swift; sourceTree = "<group>"; };
-		877BDC301E58ECEC009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		877BDC3B1E590329009A052B /* GameComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		877BDC3C1E590329009A052B /* GameEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEntity.swift; sourceTree = "<group>"; };
 		877BDC3D1E590329009A052B /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -65,6 +66,16 @@
 		877BDC421E590329009A052B /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		877BDC601E5A437B009A052B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		877BDC611E5A437B009A052B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		877BDC6E1E5A53E2009A052B /* UnityKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UnityKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		877BDC701E5A53E2009A052B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		877BDC781E5A53E2009A052B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		877BDC7B1E5A53E2009A052B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		877BDC7D1E5A53E2009A052B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		877BDC801E5A53E2009A052B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		877BDC821E5A53E2009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877BDC871E5A53E2009A052B /* UnityKit-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnityKit-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		877BDC8B1E5A53E2009A052B /* UnityKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityKitExampleTests.swift; sourceTree = "<group>"; };
+		877BDC8D1E5A53E2009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +86,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		877BDC261E58ECEC009A052B /* Frameworks */ = {
+		877BDC6B1E5A53E2009A052B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				877BDC641E5A479D009A052B /* Nimble.framework in Frameworks */,
-				877BDC651E5A479D009A052B /* Quick.framework in Frameworks */,
-				877BDC2A1E58ECEC009A052B /* UnityKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877BDC841E5A53E2009A052B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877BDCA21E5A54A4009A052B /* Nimble.framework in Frameworks */,
+				877BDCA31E5A54A4009A052B /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				877BDC221E58ECEC009A052B /* UnityKit */,
-				877BDC2D1E58ECEC009A052B /* UnityKitTests */,
+				877BDC6F1E5A53E2009A052B /* UnityKit-Example */,
+				877BDC8A1E5A53E2009A052B /* UnityKit-ExampleTests */,
 				877BDC211E58ECEC009A052B /* Products */,
 				877BDC5F1E5A437A009A052B /* Frameworks */,
 			);
@@ -102,7 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				877BDC201E58ECEC009A052B /* UnityKit.framework */,
-				877BDC291E58ECEC009A052B /* UnityKitTests.xctest */,
+				877BDC6E1E5A53E2009A052B /* UnityKit-Example.app */,
+				877BDC871E5A53E2009A052B /* UnityKit-ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +135,6 @@
 				877BDC511E590680009A052B /* Framework */,
 			);
 			path = UnityKit;
-			sourceTree = "<group>";
-		};
-		877BDC2D1E58ECEC009A052B /* UnityKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				877BDC2E1E58ECEC009A052B /* UnityKitTests.swift */,
-				877BDC301E58ECEC009A052B /* Info.plist */,
-			);
-			path = UnityKitTests;
 			sourceTree = "<group>";
 		};
 		877BDC4E1E590621009A052B /* GameplayKit Extensions */ = {
@@ -174,6 +184,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		877BDC6F1E5A53E2009A052B /* UnityKit-Example */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC701E5A53E2009A052B /* AppDelegate.swift */,
+				877BDC781E5A53E2009A052B /* GameViewController.swift */,
+				877BDC7A1E5A53E2009A052B /* Main.storyboard */,
+				877BDC7F1E5A53E2009A052B /* LaunchScreen.storyboard */,
+				877BDC7D1E5A53E2009A052B /* Assets.xcassets */,
+				877BDC821E5A53E2009A052B /* Info.plist */,
+			);
+			path = "UnityKit-Example";
+			sourceTree = "<group>";
+		};
+		877BDC8A1E5A53E2009A052B /* UnityKit-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				877BDC8B1E5A53E2009A052B /* UnityKitExampleTests.swift */,
+				877BDC8D1E5A53E2009A052B /* Info.plist */,
+			);
+			path = "UnityKit-ExampleTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -207,23 +239,40 @@
 			productReference = 877BDC201E58ECEC009A052B /* UnityKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		877BDC281E58ECEC009A052B /* UnityKitTests */ = {
+		877BDC6D1E5A53E2009A052B /* UnityKit-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 877BDC371E58ECEC009A052B /* Build configuration list for PBXNativeTarget "UnityKitTests" */;
+			buildConfigurationList = 877BDC991E5A53E2009A052B /* Build configuration list for PBXNativeTarget "UnityKit-Example" */;
 			buildPhases = (
-				877BDC251E58ECEC009A052B /* Sources */,
-				877BDC261E58ECEC009A052B /* Frameworks */,
-				877BDC271E58ECEC009A052B /* Resources */,
-				877BDC671E5A481D009A052B /* CopyFiles */,
+				877BDC6A1E5A53E2009A052B /* Sources */,
+				877BDC6B1E5A53E2009A052B /* Frameworks */,
+				877BDC6C1E5A53E2009A052B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				877BDC2C1E58ECEC009A052B /* PBXTargetDependency */,
 			);
-			name = UnityKitTests;
-			productName = UnityKitTests;
-			productReference = 877BDC291E58ECEC009A052B /* UnityKitTests.xctest */;
+			name = "UnityKit-Example";
+			productName = "UnityKit-Example";
+			productReference = 877BDC6E1E5A53E2009A052B /* UnityKit-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		877BDC861E5A53E2009A052B /* UnityKit-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877BDC9C1E5A53E2009A052B /* Build configuration list for PBXNativeTarget "UnityKit-ExampleTests" */;
+			buildPhases = (
+				877BDC831E5A53E2009A052B /* Sources */,
+				877BDC841E5A53E2009A052B /* Frameworks */,
+				877BDC851E5A53E2009A052B /* Resources */,
+				877BDCA41E5A54AF009A052B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				877BDC891E5A53E2009A052B /* PBXTargetDependency */,
+			);
+			name = "UnityKit-ExampleTests";
+			productName = "UnityKit-ExampleTests";
+			productReference = 877BDC871E5A53E2009A052B /* UnityKit-ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -242,10 +291,16 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					877BDC281E58ECEC009A052B = {
+					877BDC6D1E5A53E2009A052B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = C8L677C7HM;
 						ProvisioningStyle = Automatic;
+					};
+					877BDC861E5A53E2009A052B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C8L677C7HM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 877BDC6D1E5A53E2009A052B;
 					};
 				};
 			};
@@ -255,6 +310,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 877BDC161E58ECEB009A052B;
 			productRefGroup = 877BDC211E58ECEC009A052B /* Products */;
@@ -262,7 +318,8 @@
 			projectRoot = "";
 			targets = (
 				877BDC1F1E58ECEB009A052B /* UnityKit */,
-				877BDC281E58ECEC009A052B /* UnityKitTests */,
+				877BDC6D1E5A53E2009A052B /* UnityKit-Example */,
+				877BDC861E5A53E2009A052B /* UnityKit-ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +332,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		877BDC271E58ECEC009A052B /* Resources */ = {
+		877BDC6C1E5A53E2009A052B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877BDC7C1E5A53E2009A052B /* Main.storyboard in Resources */,
+				877BDC7E1E5A53E2009A052B /* Assets.xcassets in Resources */,
+				877BDC811E5A53E2009A052B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877BDC851E5A53E2009A052B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,23 +383,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		877BDC251E58ECEC009A052B /* Sources */ = {
+		877BDC6A1E5A53E2009A052B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				877BDC2F1E58ECEC009A052B /* UnityKitTests.swift in Sources */,
+				877BDC791E5A53E2009A052B /* GameViewController.swift in Sources */,
+				877BDC711E5A53E2009A052B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877BDC831E5A53E2009A052B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877BDC8C1E5A53E2009A052B /* UnityKitExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		877BDC2C1E58ECEC009A052B /* PBXTargetDependency */ = {
+		877BDC891E5A53E2009A052B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 877BDC1F1E58ECEB009A052B /* UnityKit */;
-			targetProxy = 877BDC2B1E58ECEC009A052B /* PBXContainerItemProxy */;
+			target = 877BDC6D1E5A53E2009A052B /* UnityKit-Example */;
+			targetProxy = 877BDC881E5A53E2009A052B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		877BDC7A1E5A53E2009A052B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877BDC7B1E5A53E2009A052B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		877BDC7F1E5A53E2009A052B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877BDC801E5A53E2009A052B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		877BDC321E58ECEC009A052B /* Debug */ = {
@@ -485,37 +580,69 @@
 			};
 			name = Release;
 		};
-		877BDC381E58ECEC009A052B /* Debug */ = {
+		877BDC9A1E5A53E2009A052B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = UnityKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creationism.UnityKitTests;
+				INFOPLIST_FILE = "UnityKit-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creationism.UnityKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		877BDC391E58ECEC009A052B /* Release */ = {
+		877BDC9B1E5A53E2009A052B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				INFOPLIST_FILE = "UnityKit-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creationism.UnityKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		877BDC9D1E5A53E2009A052B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = C8L677C7HM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = UnityKitTests/Info.plist;
+				INFOPLIST_FILE = "UnityKit-ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creationism.UnityKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creationism.UnityKit-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnityKit-Example.app/UnityKit-Example";
+			};
+			name = Debug;
+		};
+		877BDC9E1E5A53E2009A052B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "UnityKit-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creationism.UnityKit-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnityKit-Example.app/UnityKit-Example";
 			};
 			name = Release;
 		};
@@ -540,14 +667,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		877BDC371E58ECEC009A052B /* Build configuration list for PBXNativeTarget "UnityKitTests" */ = {
+		877BDC991E5A53E2009A052B /* Build configuration list for PBXNativeTarget "UnityKit-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				877BDC381E58ECEC009A052B /* Debug */,
-				877BDC391E58ECEC009A052B /* Release */,
+				877BDC9A1E5A53E2009A052B /* Debug */,
+				877BDC9B1E5A53E2009A052B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		877BDC9C1E5A53E2009A052B /* Build configuration list for PBXNativeTarget "UnityKit-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877BDC9D1E5A53E2009A052B /* Debug */,
+				877BDC9E1E5A53E2009A052B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
