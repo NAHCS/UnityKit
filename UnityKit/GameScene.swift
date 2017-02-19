@@ -71,11 +71,12 @@ open class GameScene: SKScene {
     var entities = Set<GameEntity>()
     
     public func addEntity(_ entity: GameEntity) {
+        
         addChild(entity.node)
         entities.insert(entity)
     }
-    
     public func removeEntity(_ entity: GameEntity) {
+        
         entity.node.removeFromParent()
         entities.remove(entity)
     }
