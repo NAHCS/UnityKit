@@ -8,32 +8,58 @@
 
 import GameplayKit
 
+/**
+    Subclasses `GKEntity` to hijack the entity-component system to allow for more complex behaviors,
+    such as receiving physics events, awakeability, and node ownership in components.
+*/
 open class GameEntity: GKEntity {
 
-    public var node = SKNode()
+    /// A reference to itself.
     public var gameEntity: GameEntity!
 
-    // component management
+    /// The entity's associated node.
+    public var node = SKNode()
+
+    /// The registered components that can receive physics events.
     public var physicsComponents = [PhysicsEventComponent]()
 
+    /**
+        Creates an empty `GameEntity` with a reference to itself, and an empty `SKNode` which also has
+        a reference to the new game entity.
+    */
     override public init() {
 
         super.init()
         gameEntity = self
         node.entity = gameEntity
     }
+    /**
+        Creates an empty `GameEntity`, but also assigns a name to the node.
 
+        - Parameter name: the name to assign to the new entity's node.
+    */
     public convenience init(name: String) {
 
         self.init()
         node.name = name
     }
-
     required public init?(coder aDecoder: NSCoder) {
 
         fatalError("init(coder:) has not been implemented")
     }
 
+    /**
+        Adds the compononet to the entity using the `GameplayKit` base framework, but also checks to see if
+        the component has other features.
+
+        Additional types of components supported:
+        - `GameComponent`: The base class of `UnityKit` components. Gives a `GameComponent` a reference to this `GameEntity` object.
+        - `AwakeableComponent`: A component that conforms to `AwakeableComponent` will have its `awake()` function called.
+        - `PhysicsEventComponent`: A component that conforms to `PhysicsEventComponent` will be registered to the `GameEntity` object's physicsComponent array.
+        - `NodeComponent`: A component derived from `NodeComponent` will have its node added to the `GameEntity` object's node hierarchy.
+
+        - Parameter name: the name to assign to the new entity's node.
+    */
     override open func addComponent(_ component: GKComponent) {
 
         if let c = component as? GameComponent {
@@ -49,15 +75,5 @@ open class GameEntity: GKEntity {
             node.addChild(n)
         }
         super.addComponent(component)
-    }
-}
-
-// allow access from a node in place of SKNode.entity
-public extension SKNode {
-    public var gameEntity: GameEntity? {
-        if let e = self.entity as? GameEntity {
-            return e
-        }
-        return nil
     }
 }

@@ -29,6 +29,7 @@
 		877BDCA81E5A7C0C009A052B /* TestComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDCA71E5A7C0C009A052B /* TestComponent.swift */; };
 		877BDCA91E5A8113009A052B /* UnityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC201E58ECEC009A052B /* UnityKit.framework */; };
 		877BDCAA1E5A8113009A052B /* UnityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC201E58ECEC009A052B /* UnityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		877BDCAF1E5B8C59009A052B /* SKNode+GameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDCAE1E5B8C59009A052B /* SKNode+GameEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		877BDC8B1E5A53E2009A052B /* UnityKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityKitExampleTests.swift; sourceTree = "<group>"; };
 		877BDC8D1E5A53E2009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		877BDCA71E5A7C0C009A052B /* TestComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestComponent.swift; sourceTree = "<group>"; };
+		877BDCAE1E5B8C59009A052B /* SKNode+GameEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+GameEntity.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				877BDC3D1E590329009A052B /* GameScene.swift */,
+				877BDCAE1E5B8C59009A052B /* SKNode+GameEntity.swift */,
 			);
 			name = "SpriteKit Extensions";
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				877BDC4B1E590329009A052B /* Time.swift in Sources */,
 				877BDC461E590329009A052B /* GameScene.swift in Sources */,
 				877BDC441E590329009A052B /* GameComponent.swift in Sources */,
+				877BDCAF1E5B8C59009A052B /* SKNode+GameEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

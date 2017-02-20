@@ -1,3 +1,8 @@
+line_length:
+  warning: 110
+  error: 200
+  ignores_urls: true
+
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - UnityKit-Example
