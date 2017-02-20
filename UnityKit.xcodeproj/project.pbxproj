@@ -26,6 +26,9 @@
 		877BDCA31E5A54A4009A052B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; };
 		877BDCA51E5A54B7009A052B /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC601E5A437B009A052B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		877BDCA61E5A54B7009A052B /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877BDC611E5A437B009A052B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		877BDCA81E5A7C0C009A052B /* TestComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDCA71E5A7C0C009A052B /* TestComponent.swift */; };
+		877BDCA91E5A8113009A052B /* UnityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC201E58ECEC009A052B /* UnityKit.framework */; };
+		877BDCAA1E5A8113009A052B /* UnityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877BDC201E58ECEC009A052B /* UnityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 877BDC6D1E5A53E2009A052B;
 			remoteInfo = "UnityKit-Example";
+		};
+		877BDCAB1E5A8113009A052B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877BDC171E58ECEB009A052B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 877BDC1F1E58ECEB009A052B;
+			remoteInfo = UnityKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +58,17 @@
 				877BDCA51E5A54B7009A052B /* Nimble.framework in CopyFiles */,
 				877BDCA61E5A54B7009A052B /* Quick.framework in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877BDCAD1E5A8113009A052B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				877BDCAA1E5A8113009A052B /* UnityKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -76,6 +97,7 @@
 		877BDC871E5A53E2009A052B /* UnityKit-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnityKit-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		877BDC8B1E5A53E2009A052B /* UnityKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityKitExampleTests.swift; sourceTree = "<group>"; };
 		877BDC8D1E5A53E2009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877BDCA71E5A7C0C009A052B /* TestComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877BDCA91E5A8113009A052B /* UnityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +163,8 @@
 		877BDC4E1E590621009A052B /* GameplayKit Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				877BDC3B1E590329009A052B /* GameComponent.swift */,
 				877BDC3C1E590329009A052B /* GameEntity.swift */,
+				877BDC3B1E590329009A052B /* GameComponent.swift */,
 				877BDC3E1E590329009A052B /* NodeComponent.swift */,
 				877BDC3F1E590329009A052B /* PhysicsComponent.swift */,
 				877BDC411E590329009A052B /* SpriteComponent.swift */,
@@ -187,6 +210,7 @@
 		877BDC6F1E5A53E2009A052B /* UnityKit-Example */ = {
 			isa = PBXGroup;
 			children = (
+				877BDCA71E5A7C0C009A052B /* TestComponent.swift */,
 				877BDC701E5A53E2009A052B /* AppDelegate.swift */,
 				877BDC781E5A53E2009A052B /* GameViewController.swift */,
 				877BDC7A1E5A53E2009A052B /* Main.storyboard */,
@@ -246,10 +270,12 @@
 				877BDC6A1E5A53E2009A052B /* Sources */,
 				877BDC6B1E5A53E2009A052B /* Frameworks */,
 				877BDC6C1E5A53E2009A052B /* Resources */,
+				877BDCAD1E5A8113009A052B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				877BDCAC1E5A8113009A052B /* PBXTargetDependency */,
 			);
 			name = "UnityKit-Example";
 			productName = "UnityKit-Example";
@@ -387,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877BDCA81E5A7C0C009A052B /* TestComponent.swift in Sources */,
 				877BDC791E5A53E2009A052B /* GameViewController.swift in Sources */,
 				877BDC711E5A53E2009A052B /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +434,11 @@
 			isa = PBXTargetDependency;
 			target = 877BDC6D1E5A53E2009A052B /* UnityKit-Example */;
 			targetProxy = 877BDC881E5A53E2009A052B /* PBXContainerItemProxy */;
+		};
+		877BDCAC1E5A8113009A052B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 877BDC1F1E58ECEB009A052B /* UnityKit */;
+			targetProxy = 877BDCAB1E5A8113009A052B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -583,6 +615,7 @@
 		877BDC9A1E5A53E2009A052B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;
@@ -597,6 +630,7 @@
 		877BDC9B1E5A53E2009A052B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C8L677C7HM;

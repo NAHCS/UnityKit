@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  fiftythreehurts
+//  UnityKit
 //
 //  Created by Jak Tiano on 1/8/17.
 //  Copyright © 2017 Creationism. All rights reserved.
