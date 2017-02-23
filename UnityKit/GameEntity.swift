@@ -43,9 +43,14 @@ open class GameEntity: GKEntity {
         self.init()
         node.name = name
     }
-    required public init?(coder aDecoder: NSCoder) {
+    /**
+        Delegates initialization to the default initializer.
+         
+        - Parameter aDecoder: the coder.
+    */
+    required public convenience init?(coder aDecoder: NSCoder) {
 
-        fatalError("init(coder:) has not been implemented")
+        self.init()
     }
 
     /**

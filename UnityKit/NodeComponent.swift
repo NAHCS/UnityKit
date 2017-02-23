@@ -8,7 +8,12 @@
 
 import GameplayKit
 
+/**
+    Subclass of `GameComponent` that specifically contains an SKNode to be added to
+    the scene hierarchy when added to an entity.
+*/
 open class NodeComponent: GameComponent {
 
-    internal var node: SKNode?
+    /// An SKNode that will be parented to owning entity.
+    internal var node: SKNode? // TODO: Determine if this can be seen in subclasses in other modules
 }
