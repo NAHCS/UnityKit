@@ -9,15 +9,15 @@
 import SpriteKit
 
 /**
-    Extends SKNode to add a computed property for a `GameEntity` reference.
+	Extends SKNode to add a computed property for a `GameEntity` reference.
 */
 public extension SKNode {
 
-    /// Returns a node's `entity` as a `GameEntity` if valid.
-    public var gameEntity: GameEntity? {
-        if let e = self.entity as? GameEntity {
-            return e
-        }
-        return nil
-    }
+	/// Returns a node's `entity` as a `GameEntity` if valid.
+	public var gameEntity: GameEntity? {
+		if let e = self.entity as? GameEntity {
+			return e
+		}
+		return nil
+	}
 }
