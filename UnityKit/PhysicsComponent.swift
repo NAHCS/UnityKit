@@ -51,8 +51,7 @@ public class PhysicsComponent: GameComponent {
 	}
 
 	/**
-		Fails, because a `PhysicsComponent` does not support being initialized
-		from a coder.
+		Fails, because a `PhysicsComponent` does not support being initialized from a coder.
 
 		- Parameter aDecoder: the coder.
 	*/
