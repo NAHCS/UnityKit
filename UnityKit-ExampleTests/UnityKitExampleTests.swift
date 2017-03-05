@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import SpriteKit
 import UnityKit
 @testable import UnityKit_Example
 
@@ -16,7 +17,7 @@ class GameEntityTests: QuickSpec {
     override func spec () {
         
         var gameViewController: GameViewController!
-        var scene: GameScene!
+        var scene: TestGameScene!
         beforeEach {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             gameViewController = storyboard.instantiateInitialViewController() as! GameViewController
@@ -66,6 +67,46 @@ class GameEntityTests: QuickSpec {
                     expect(component.isAwake).to(beTrue())
                 }
             }
+
+			describe("its PhysicsEventComponent") {
+
+				let category1	 =  UInt32(0x1 << 1)
+				let category2	 =  UInt32(0x1 << 2)
+				let categoryNone =  UInt32(0x1 << 0)
+
+				it("recieves physics events") {
+
+					// create physics body
+					let bodySize = CGSize(width: 100, height: 100)
+					let physicsBody = SKPhysicsBody(rectangleOf: bodySize)
+					physicsBody.affectedByGravity = false
+
+					// create components
+					let testComponent = TestComponent()
+					let physicsComponent = PhysicsComponent(withBody: physicsBody, category: category1, contactCategories: category2, collisionCategories: categoryNone)
+
+					// add components
+					entity.addComponent(testComponent)
+					entity.addComponent(physicsComponent)
+
+					// set up falling object
+					let fallBody = SKPhysicsBody(rectangleOf: bodySize)
+					let fallEntity = GameEntity(name: "Fall Object")
+					fallEntity.addComponent(PhysicsComponent(withBody: fallBody, category: category2, contactCategories: categoryNone, collisionCategories: categoryNone))
+
+					// set positions
+					entity.node.position = CGPoint(x: 0, y: 0)
+					fallEntity.node.position = CGPoint(x: 0, y: 110)
+
+					// add both entities to scene
+					scene.addEntity(entity)
+					scene.addEntity(fallEntity)
+
+					// expectations
+					expect(testComponent.hasEnteredCollision).toEventually(beTrue(), timeout: 2.0)
+					expect(testComponent.hasExitedCollision).toEventually(beTrue(), timeout: 2.0)
+				}
+			}
         }
     }
 }

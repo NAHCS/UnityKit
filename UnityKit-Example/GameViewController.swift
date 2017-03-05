@@ -12,14 +12,14 @@ import UnityKit
 
 class GameViewController: UIViewController {
 
-    public var scene: GameScene!
+    public var scene: TestGameScene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let view = self.view as! SKView? {
             
-            scene = GameScene()
+            scene = TestGameScene()
             scene.scaleMode = .aspectFill
 
             view.presentScene(scene)

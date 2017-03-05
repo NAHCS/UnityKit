@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87171FDD1E6B552900665761 /* TestGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87171FDC1E6B552900665761 /* TestGameScene.swift */; };
+		87171FDF1E6C6D5A00665761 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87171FDE1E6C6D5A00665761 /* Todo.swift */; };
 		877BDC311E58ECEC009A052B /* UnityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 877BDC231E58ECEC009A052B /* UnityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		877BDC441E590329009A052B /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3B1E590329009A052B /* GameComponent.swift */; };
 		877BDC451E590329009A052B /* GameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BDC3C1E590329009A052B /* GameEntity.swift */; };
@@ -75,6 +77,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87171FDC1E6B552900665761 /* TestGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameScene.swift; sourceTree = "<group>"; };
+		87171FDE1E6C6D5A00665761 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		877BDC201E58ECEC009A052B /* UnityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		877BDC231E58ECEC009A052B /* UnityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityKit.h; sourceTree = "<group>"; };
 		877BDC241E58ECEC009A052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87171FDB1E6B544C00665761 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				877BDCA71E5A7C0C009A052B /* TestComponent.swift */,
+				87171FDC1E6B552900665761 /* TestGameScene.swift */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
 		877BDC161E58ECEB009A052B = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +171,7 @@
 				877BDC4E1E590621009A052B /* GameplayKit Extensions */,
 				877BDC501E590654009A052B /* Utilities */,
 				877BDC511E590680009A052B /* Framework */,
+				87171FDE1E6C6D5A00665761 /* Todo.swift */,
 			);
 			path = UnityKit;
 			sourceTree = "<group>";
@@ -213,7 +227,7 @@
 		877BDC6F1E5A53E2009A052B /* UnityKit-Example */ = {
 			isa = PBXGroup;
 			children = (
-				877BDCA71E5A7C0C009A052B /* TestComponent.swift */,
+				87171FDB1E6B544C00665761 /* Custom Classes */,
 				877BDC701E5A53E2009A052B /* AppDelegate.swift */,
 				877BDC781E5A53E2009A052B /* GameViewController.swift */,
 				877BDC7A1E5A53E2009A052B /* Main.storyboard */,
@@ -410,6 +424,7 @@
 				877BDC461E590329009A052B /* GameScene.swift in Sources */,
 				877BDC441E590329009A052B /* GameComponent.swift in Sources */,
 				877BDCAF1E5B8C59009A052B /* SKNode+GameEntity.swift in Sources */,
+				87171FDF1E6C6D5A00665761 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +434,7 @@
 			files = (
 				877BDCA81E5A7C0C009A052B /* TestComponent.swift in Sources */,
 				877BDC791E5A53E2009A052B /* GameViewController.swift in Sources */,
+				87171FDD1E6B552900665761 /* TestGameScene.swift in Sources */,
 				877BDC711E5A53E2009A052B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

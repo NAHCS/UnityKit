@@ -52,7 +52,7 @@ open class GameScene: SKScene {
 	// MARK: - Entity Management
 
 	/// The `GameEntity` objects registered with this scene
-	internal var entities = Set<GameEntity>()
+	public var entities = Set<GameEntity>()
 
 	/**
 		Adds the entity's node with the scene heirarchy, and inserts the entity into a set
