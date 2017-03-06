@@ -32,8 +32,8 @@ public protocol AwakeableComponent {
 public protocol PhysicsEventComponent {
 
 	/// Called when another body enters this entity's physics body.
-	func onCollisionEnter(body: SKPhysicsBody)
+	func onCollisionEnter(body: SKPhysicsBody, contact: SKPhysicsContact)
 
 	/// Called when another body exits this entity's physics body.
-	func onCollisionExit(body: SKPhysicsBody)
+	func onCollisionExit(body: SKPhysicsBody, contact: SKPhysicsContact)
 }

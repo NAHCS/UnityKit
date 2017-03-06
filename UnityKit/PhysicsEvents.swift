@@ -46,8 +46,8 @@ class PhysicsEvents {
 	*/
 	static func contactBegan(_ contact: SKPhysicsContact) {
 
-		registeredBodies[contact.bodyA]?.madeContact(with: contact.bodyB)
-		registeredBodies[contact.bodyB]?.madeContact(with: contact.bodyA)
+		registeredBodies[contact.bodyA]?.madeContact(with: contact.bodyB, contact: contact)
+		registeredBodies[contact.bodyB]?.madeContact(with: contact.bodyA, contact: contact)
 	}
 
 	/**
@@ -58,7 +58,7 @@ class PhysicsEvents {
 	*/
 	static func contactEnded(_ contact: SKPhysicsContact) {
 
-		registeredBodies[contact.bodyA]?.endedContact(with: contact.bodyB)
-		registeredBodies[contact.bodyB]?.endedContact(with: contact.bodyA)
+		registeredBodies[contact.bodyA]?.endedContact(with: contact.bodyB, contact: contact)
+		registeredBodies[contact.bodyB]?.endedContact(with: contact.bodyA, contact: contact)
 	}
 }

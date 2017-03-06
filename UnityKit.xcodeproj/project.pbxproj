@@ -167,11 +167,11 @@
 		877BDC221E58ECEC009A052B /* UnityKit */ = {
 			isa = PBXGroup;
 			children = (
+				87171FDE1E6C6D5A00665761 /* Todo.swift */,
 				877BDC4F1E590645009A052B /* SpriteKit Extensions */,
 				877BDC4E1E590621009A052B /* GameplayKit Extensions */,
 				877BDC501E590654009A052B /* Utilities */,
 				877BDC511E590680009A052B /* Framework */,
-				87171FDE1E6C6D5A00665761 /* Todo.swift */,
 			);
 			path = UnityKit;
 			sourceTree = "<group>";

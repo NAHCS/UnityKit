@@ -66,10 +66,10 @@ public class PhysicsComponent: GameComponent {
 
 		- Parameter body: the physics body that made contact.
 	*/
-	internal func madeContact(with body: SKPhysicsBody) {
+	internal func madeContact(with body: SKPhysicsBody, contact: SKPhysicsContact) {
 
 		for pc in gameEntity.physicsComponents {
-			pc.onCollisionEnter(body: body)
+			pc.onCollisionEnter(body: body, contact: contact)
 		}
 	}
 
@@ -79,10 +79,10 @@ public class PhysicsComponent: GameComponent {
 
 		- Parameter body: the physics body that ended contact.
 	*/
-	internal func endedContact(with body: SKPhysicsBody) {
+	internal func endedContact(with body: SKPhysicsBody, contact: SKPhysicsContact) {
 
 		for pc in gameEntity.physicsComponents {
-			pc.onCollisionExit(body: body)
+			pc.onCollisionExit(body: body, contact: contact)
 		}
 	}
 }
